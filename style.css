@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #4228d0 0%, #4485c0 46%, #22cc70 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 410px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.container .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container form .data {
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.container form .data {
+  font-size: 18px;
+}
+
+form .data input {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+form .data input:focus {
+  border-color: #4158d0;
+  border-bottom-width: 2px;
+}
+
+form .forgot-password {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+form .forgot-password a {
+  color: #4158d0;
+  text-decoration: none;
+}
+
+form .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+form .btn {
+  margin: 0 30px;
+  height: 45px;
+  width: 100%;
+}
+
+form .btn button {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #4158d0 0%, #4485c0 46%, #22cc70 100%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.6s;
+  background-size: 200%;
+}
+
+form .btn button:hover {
+  background-position: center;
+}
+
+form .signup-link {
+  text-align: center;
+}
+
+form .signup-link a {
+  color: #4258d0;
+  text-decoration: none;
+}
+
+form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+.container .close-btn {
+  align-self: flex-end;
+  cursor: pointer;
+  position
+}
+
+.container .close-btn:hover {
+  color: #4258d0;
+}
+
+.show-btn {
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #4158d0;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+  border-radius:50px;
+}
+
+#show:checked ~ .container {
+  display: flex;
+}
+
+#show:checked ~ .show-btn {
+  display: none;
+
+}
+
+input[type="checkbox"] {
+  display: none;
+}
